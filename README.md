@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 webcam-color-tracker
 ====================
 
@@ -43,3 +44,9 @@ Alter the first number in each tuple based on the list below.
 For more information on this google "openCV hue range for the HSV color model"
 
 Have Fun!!!!
+=======
+camtrack
+========
+
+Webcam movment tracking
+>>>>>>> 5a3fc13e8f11b90a94f75b238b2b193d288a426e
