@@ -3,7 +3,7 @@ from pyfirmata import SERVO
 import time
 
 
-board = ArduinoMega('com3')
+board = ArduinoMega('com4')
 board.digital[7].mode = SERVO
 board.digital[6].mode = SERVO
 window_width = 650
@@ -63,7 +63,7 @@ while 1:
     
     #xdistance from centre
     if camx < (window_width / 2):
-        xdistance = (window_width / 2) - camx
+        xdistance = (window_width / 2) -camx
     else:
         xdistance = camx - (window_width / 2)
     

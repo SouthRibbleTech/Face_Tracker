@@ -121,10 +121,26 @@ class ColorTracker:
             #if i%5==0:
             faces = self.detect_faces(image)
             detected = 0
-    
+
+            bestmatch=999999
+            bestobj=None
+            
             for (x,y,w,h) in faces:
+                textx=x+(w/2)
+                texty=y+(h/2)
+                cv.Rectangle(image, (x,y), (x+w,y+h),cv.Scalar(0,0,255,0))
+                if abs(textx-300)<bestmatch:
+                    bestmatch=abs(textx-300)
+                    bestobj=(x,y,w,h)
+                
+            #for (x,y,w,h) in faces:
+            if bestobj!=None:
                 detected = 1
-                cv.Rectangle(image, (x,y), (x+w,y+h), 255)
+                x=bestobj[0]
+                y=bestobj[1]
+                w=bestobj[2]
+                h=bestobj[3]
+                cv.Rectangle(image, (x,y), (x+w,y+h), cv.Scalar(0,255,0,0))
                 print x,y
                 self.WriteXY(x+(w/2),y+(h/2))
             if detected == 0:
@@ -141,7 +157,7 @@ class ColorTracker:
         if detected:
             for (x,y,w,h),n in detected:
                 faces.append((x,y,w,h))
-                break
+                
             
         return faces
                 
