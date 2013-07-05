@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 webcam-color-tracker
 ====================
 
@@ -43,6 +42,9 @@ Alter the first number in each tuple based on the list below.
 
 For more information on this google "openCV hue range for the HSV color model"
 
+For more information on this project you can vist it the projects home page 
+http://wiki.prestonhackspace.org.uk/index.php?title=Face_and_Color_tracking_web_cam
+
 Have Fun!!!!
 
 Update 18th June 2013:
@@ -51,4 +53,3 @@ Added: The face tracking pick the face nearest the center of the screen and igno
 Added: Colours all faces Red for icgnored and Green as focusted
 
 
->>>>>>> 5a3fc13e8f11b90a94f75b238b2b193d288a426e
