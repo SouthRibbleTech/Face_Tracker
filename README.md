@@ -44,9 +44,11 @@ Alter the first number in each tuple based on the list below.
 For more information on this google "openCV hue range for the HSV color model"
 
 Have Fun!!!!
-=======
-camtrack
-========
 
-Webcam movment tracking
+Update 18th June 2013:
+Fixed: bug where was not centering on the screen
+Added: The face tracking pick the face nearest the center of the screen and ignores the rest
+Added: Colours all faces Red for icgnored and Green as focusted
+
+
 >>>>>>> 5a3fc13e8f11b90a94f75b238b2b193d288a426e
